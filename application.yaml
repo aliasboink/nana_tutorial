@@ -1,13 +1,13 @@
-apiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1 # This changes!
 kind: Application
 metadata:
   name: myapp-argo-application
   namespace: argocd
 spec:
-  project: default
+  project: default # 
 
   source:
-    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
+    repoURL: https://github.com/aliasboink/nana_tutorial
     targetRevision: HEAD
     path: dev
   destination: 
